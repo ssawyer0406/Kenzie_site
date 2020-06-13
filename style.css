@@ -1,0 +1,57 @@
+/*Base styles*/
+* {
+  margin: none;
+  padding: none;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+.header_button {
+  color: whitesmoke;
+  text-decoration: none;
+  background-color: whitesmoke;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+.kenzie {
+  display: flex;
+  justify-content: center;
+}
+
+/*Layout styles*/
+
+.video1 {
+  display: flex;
+  justify-content: center;
+}
+.quote_1 {
+}
+
+.quote_2 {
+}
+
+.course_software {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  background-color: rgb(5, 63, 117);
+  color: whitesmoke;
+}
+.coa .coa_button {
+  display: flex;
+  justify-content: center;
+}
+
+/*Block styles*/
+
+.faculty {
+  display: flex;
+  justify-content: space-evenly;
+}
