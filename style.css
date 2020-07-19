@@ -9,8 +9,8 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .header_button {
@@ -19,13 +19,14 @@ nav {
   background-color: whitesmoke;
 }
 
-h1 {
+h1,
+p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .kenzie {
@@ -33,32 +34,70 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 /*Layout styles*/
+
+.meet {
+  display: grid;
+  grid-template-rows: 1fr 50% minmax(30%);
+}
+.meet div:nth-child(even) {
+  background-color: lightgray;
+}
+
+.meet div:nth-child(odd) {
+  background-color: navys;
+}
+
+.faculty {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.faculty div:nth-child(even) {
+  background-color: gray;
+}
+
+.faculty div:nth-child(odd) {
+  background-color: navy;
+}
+
+.students {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+/* .video2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+} */
+
+.students div:nth-child(even) {
+  background-color: lightgray;
+}
+
+.students div:nth-child(odd) {
+  background-color: navy;
+}
 .video1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-.course_software {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-button {
+.button {
   background-color: #053f75;
   color: whitesmoke;
+}
+#button {
+  display: flex;
+  justify-content: center;
 }
 
 .coa .coa_button {
@@ -66,17 +105,17 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 /*Block styles*/
-.faculty {
+/* .faculty {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+} */
 /*# sourceMappingURL=style.css.map */
