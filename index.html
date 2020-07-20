@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-
+    <script src="https://use.fontawesome.com/925cb02500.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>Kenzie Site</title>
   </head>
   <body>
@@ -39,7 +43,7 @@
       <p>
         "The new Indianapolis-based venture is <br />
         creating a new type of program that combines <br />
-        worka nd school to teach nontechies...
+        work and school to teach nontechies...
       </p>
     </div>
     <div class="quote_2">
@@ -51,12 +55,12 @@
 
     <section class="course-options">
       <div class="course_software">
-        <i class="far fa-calendar">calendar</i>
         <p>Software Engineering</p>
       </div>
       <button id="button">Learn to Code</button>
 
       <div class="course_ux">
+        <!-- <i class="far fa-calendar">calendar</i> -->
         <p>User Experience</p>
       </div>
       <button id="button">Learn to Design</button>
@@ -109,7 +113,7 @@
     <section class="students">
       <div class="video2">
         <iframe
-          class="video1"
+          class="video_2"
           width="none"
           height="width"
           src="https://youtu.be/UBATWULk8CU"
@@ -121,39 +125,49 @@
         <p>
           Learn about the diverse backgrounds of Kenzie <br />
           students and how they are transforming their <br />
-          lives at Kenzie Academy
+          lives at Kenzie Academy.
         </p>
       </div>
 
-      <form class="contact_form">
+      <span class="far fa-calendar"></span>
+
+      
         <h1>Let's Chat</h1>
         <p>
           Kenzie Academy is no small commitment. If we've piqued<br />
           your interest today, we'd love to keep the conversation going.
         </p>
-        <div class="contact_firstname">
-          <input
-            id="textbox"
-            type="text"
-            name="First Name"
-            placeholder=" First Name"
-          /><br />
+        <form class="contact"></form>
+        <div class="contact_form">
+          <div class="contact_firstname">
+            <input
+              id="textbox"
+              type="text"
+              name="First Name"
+              placeholder=" First Name"
+            /><br />
+          </div>
+          <div class="contact_lastname">
+            <input
+              id="textbox"
+              type="text"
+              name="last name"
+              placeholder="Last Name"
+            /><br />
+          </div>
+          <div class="contact_email">
+            <input
+              id="textbox"
+              type="email"
+              name="Email"
+              placeholder="Email "
+            />
+          </div>
+          <div class="contact_phone">
+            <input id="textbox" type="tel" name="phone" placeholder="phone " />
+          </div>
+          <button>Submit</button>
         </div>
-        <div class="contact_lastname">
-          <input
-            id="textbox"
-            type="text"
-            name="last name"
-            placeholder="Last Name"
-          /><br />
-        </div>
-        <div class="contact_email">
-          <input id="textbox" type="email" name="Email" placeholder="Email " />
-        </div>
-        <div class="contact_phone">
-          <input id="textbox" type="tel" name="phone" placeholder="phone " />
-        </div>
-        <button>Submit</button>
       </form>
     </section>
   </body>

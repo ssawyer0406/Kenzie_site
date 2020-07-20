@@ -4,54 +4,139 @@
   padding: none;
 }
 
+:root {
+  --bg_color: lightgray;
+  --main_font: "Open Sans", sans-serif;
+}
+
+html {
+  background-color: var(--bg_color);
+  font-family: var(--main_font);
+}
+
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
+
 .header_button {
   color: whitesmoke;
   text-decoration: none;
   background-color: whitesmoke;
 }
 
-h1 {
+h1,
+p {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
+
 .kenzie {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
 /*Layout styles*/
+.meet {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 50% minmax(30%);
+  grid-template-rows: 1fr 50% minmax(30%);
+}
+
+.meet div:nth-child(even) {
+  background-color: lightgray;
+}
+
+.meet div:nth-child(odd) {
+  background-color: navy;
+}
+
+.faculty {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.faculty div:nth-child(even) {
+  background-color: gray;
+}
+
+.faculty div:nth-child(odd) {
+  background-color: navy;
+}
+
+.students {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+/* .video2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+} */
+.students div:nth-child(even) {
+  background-color: lightgray;
+}
+
+.students div:nth-child(odd) {
+  background-color: navy;
+}
 
 .video1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
-.quote_1 {
-}
 
-.quote_2 {
-}
-
-.course_software {
-  display: flex;
-  justify-content: space-between;
-}
-
-button {
-  background-color: rgb(5, 63, 117);
+.button {
+  background-color: #053f75;
   color: whitesmoke;
 }
-.coa .coa_button {
+
+#button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.coa .coa_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
 /*Block styles*/
-
-.faculty {
+/* .faculty {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
-}
+} */
+/*# sourceMappingURL=style.css.map */
