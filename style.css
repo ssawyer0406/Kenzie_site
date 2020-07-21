@@ -7,11 +7,23 @@
 :root {
   --bg_color: lightgray;
   --main_font: "Open Sans", sans-serif;
+  --font_color: whitesmoke;
+  --kenzie_blue: rgba(6, 6, 90, 0.842);
 }
 
 html {
   background-color: var(--bg_color);
   font-family: var(--main_font);
+}
+
+.hero_design {
+  background-color: var(--kenzie_blue);
+  color: var(--font_color);
+}
+
+img {
+  width: auto;
+  height: 100%;
 }
 
 nav {
@@ -27,10 +39,21 @@ nav {
   color: whitesmoke;
   text-decoration: none;
   background-color: whitesmoke;
+  margin: 50px;
+  width: auto;
+  height: auto;
 }
 
 h1,
-p,
+p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .kenzie {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -41,6 +64,26 @@ p,
 }
 
 /*Layout styles*/
+.course-options {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+i {
+  color: rgba(6, 6, 90, 0.842);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .meet {
   display: -ms-grid;
   display: grid;
@@ -48,13 +91,12 @@ p,
   grid-template-rows: 1fr 50% minmax(30%);
 }
 
-.meet div:nth-child(even),
+.meet_title,
 .meet div:nth-child(odd),
-.faculty div:nth-child(even),
-.faculty div:nth-child(odd),
-.students div:nth-child(even),
-.students div:nth-child(odd) {
-  background-color: lightgray;
+.students_title,
+.form_title {
+  background-color: var(--kenzie_blue);
+  color: var(--font_color);
 }
 
 .faculty {
@@ -64,6 +106,12 @@ p,
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.fa-user-circle {
+  color: var(--kenzie_blue);
+  position: relative;
+  margin: left;
+}
+
 .students {
   display: -ms-grid;
   display: grid;
@@ -71,38 +119,70 @@ p,
   grid-template-rows: 1fr 1fr;
 }
 
+.students_t {
+  width: 100%;
+}
+
+.students_about {
+  margin: auto;
+}
+
 /* .video2 {
   grid-column-start: 1;
   grid-column-end: 3;
 } */
+.students div:nth-child(odd),
+.students div:nth-child(even),
+.faculty div:nth-child(odd),
+.faculty div:nth-child(even),
+.meet div:nth-child(even) {
+  background-color: var(--bg_color);
+}
 
-.video1 {
+.video_1 {
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: auto;
-  width: auto;
-  margin: -20px;
-  padding: 40px;
-  position: relative;
-  top: 50%;
-  left: 50%;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
+.video_2 {
+  margin: auto;
+  padding: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 button {
-  height: 20px;
-  width: 100px;
-  margin: -20px -50px;
-  position: relative;
-  top: 50%;
-  left: 50%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 30px;
+  width: auto;
+  height: auto;
+  background: white;
+  -webkit-transition: width 2s;
+  transition: width 2s;
 }
 
 .button {
-  background-color: #053f75;
+  background-color: var(--bg_color);
   color: whitesmoke;
+}
+
+button:hover {
+  width: 300px;
 }
 
 #button {
@@ -122,13 +202,19 @@ button {
   -ms-flex-pack: center;
   justify-content: center;
 }
+
 .contact_form {
-  height: 20px;
-  width: 100px;
-  margin: -20px -50px;
-  position: relative;
-  top: 50%;
-  left: 50%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /*Block styles*/

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="https://use.fontawesome.com/925cb02500.js"></script>
+    <script src="https://kit.fontawesome.com/bb0064c18e.js" crossorigin="anonymous"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
       rel="stylesheet"
@@ -13,6 +13,7 @@
   </head>
   <body>
     <header>
+      <img src="images/Logo-ken.png">
       <nav class="header_nav">
         <li>
           <a href="Admissions">Admissions</a>
@@ -30,13 +31,7 @@
         Kenzie Academy is a two-year learning track<br />
         and apprenticeship program.
       </p>
-      <iframe
-        class="video1"
-        width="none"
-        height="width"
-        src="https://youtu.be/UBATWULk8CU"
-        >Welcome to Kenzie (Video)</iframe
-      >
+      <iframe class="video_1" width="560" height="315" src="https://www.youtube.com/embed/UBATWULk8CU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
 
     <div class="quote_1">
@@ -55,20 +50,21 @@
 
     <section class="course-options">
       <div class="course_software">
+        <i class="far fa-calendar fa-3x" ></i>
         <p>Software Engineering</p>
-      </div>
       <button id="button">Learn to Code</button>
+    </div>
 
       <div class="course_ux">
-        <!-- <i class="far fa-calendar">calendar</i> -->
+        <i class="far fa-calendar fa-3x"></i>
         <p>User Experience</p>
-      </div>
       <button id="button">Learn to Design</button>
-
+    </div>
       <div class="course_digital">
+        <i class="far fa-calendar fa-3x"></i>
         <p>Digital Marketing</p>
-      </div>
       <button id="button">Learn to Market</button>
+    </div>
     </section>
 
     <div class="coa">
@@ -104,21 +100,17 @@
     </div>
 
     <section class="faculty">
-      <div class="team"><p class="faculty_team">Team</p></div>
-      <div class="board"><p class="faculty_board">Board</p></div>
-      <div class="mentors"><p class="faculty_mentors">Mentors</p></div>
-      <div class="advisors"><p class="faculty_advisors">Advisors</p></div>
+   
+
+      <div class="team">   <i class="fas fa-user-circle fa-2x"></i><p class="faculty_team">Team</p></div>
+      <div class="board">   <i class="fas fa-user-circle fa-2x"></i><p class="faculty_board">Board</p></div>
+      <div class="mentors">   <i class="fas fa-user-circle fa-2x"></i><p class="faculty_mentors">Mentors</p></div>
+      <div class="advisors">   <i class="fas fa-user-circle fa-2x"></i><p class="faculty_advisors">Advisors</p></div>
     </section>
 
     <section class="students">
-      <div class="video2">
-        <iframe
-          class="video_2"
-          width="none"
-          height="width"
-          src="https://youtu.be/UBATWULk8CU"
-          >Welcome to Kenzie (Video)</iframe
-        >
+      <div class="video_2">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6p1pWC2Doks" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div class="students_t"><h1 class="students_title">Students</h1></div>
       <div class="students_about">
@@ -128,11 +120,7 @@
           lives at Kenzie Academy.
         </p>
       </div>
-
-      <span class="far fa-calendar"></span>
-
-      
-        <h1>Let's Chat</h1>
+   <h1 class="form_title">Let's Chat</h1>
         <p>
           Kenzie Academy is no small commitment. If we've piqued<br />
           your interest today, we'd love to keep the conversation going.
@@ -147,7 +135,7 @@
               placeholder=" First Name"
             /><br />
           </div>
-          <div class="contact_lastname">
+          <div class="contact_form">
             <input
               id="textbox"
               type="text"
@@ -155,7 +143,7 @@
               placeholder="Last Name"
             /><br />
           </div>
-          <div class="contact_email">
+          <div class="contact_form">
             <input
               id="textbox"
               type="email"
