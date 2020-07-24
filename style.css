@@ -33,6 +33,7 @@ nav {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  /* Nav bar is slightly off, but great start. Had to change the bullet styles to "none". */
 }
 
 .header_button {
@@ -42,6 +43,10 @@ nav {
   margin: 50px;
   width: auto;
   height: auto;
+}
+
+li {
+  list-style: none;
 }
 
 h1,
@@ -70,8 +75,9 @@ p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  /* Great job with the use of Flex to get the images spaced evenly. */
 }
 
 i {
@@ -80,8 +86,8 @@ i {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .meet {
@@ -104,7 +110,7 @@ i {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-}
+} /* Great job using grid but your images should be inline with the text.*/
 
 .fa-user-circle {
   color: var(--kenzie_blue);
@@ -115,8 +121,9 @@ i {
 .students {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
+  /* Only needed one section for this when using grid. I removed the extra space above the video. */
 }
 
 .students_t {
@@ -145,19 +152,19 @@ i {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .video_2 {
   margin: auto;
-  padding: 120px;
+  padding: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 button {
@@ -166,8 +173,8 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   height: 30px;
   width: auto;
   height: auto;
@@ -210,12 +217,14 @@ button:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
+
+/* Would like to see how it would look with responsive design. But overall, the site looks good, although there are some layout issues that can easily be fixed. Great Job altogether. */
 
 /*Block styles*/
 /* .faculty {
